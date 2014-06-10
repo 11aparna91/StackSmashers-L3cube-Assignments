@@ -5,11 +5,11 @@ Software Spec: Debian linux _ linuxMint 17
 Usage:
 
 	To Commit:
-		./svg.o File.text
+		./svc.o File.text
 	To Restore:
-		./svg.o version_number
+		./svc.o version_number
 Features:
-	Basic facilities of svg.
+	Basic facilities of svc.
 	no restriction on number of operations done on file.
 	no restriction on file_size.
 	fast retrival and use of shell commands done.
@@ -26,12 +26,12 @@ Note:
 		At start the File is directly copied and kept as version 0 and the upcoming commit will make 
 	use to this file to generate patch.file . Once a restore is done then counter is set to zero.
 	Thus for next commit the file as it is will be copied eg 5 version was commited after restore.Then 
-	the upcoming file will generate the patch with respect to file 5 from svg/commit folder.
+	the upcoming file will generate the patch with respect to file 5 from svc/commit folder.
 		Thus using diff and patch there is no restriction on operations made on file and it also saves
 	Space and time for restoring and commiting the file.
 
 Folder Structure:
-	SVG - main folder under which all commit and required data will be stored 
+	svc - main folder under which all commit and required data will be stored 
 
 		commit - It will have all the commit data, required for Restoring the file
 			.text - for 1st commit and for 1st commit after restore .text file is generated
